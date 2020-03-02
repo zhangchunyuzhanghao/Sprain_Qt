@@ -36,10 +36,20 @@ INCLUDEPATH += $$VLC_Qt_SDK_PATH/include
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+    custom/basewidget.cpp \
+    custom/vlc_seek_slider.cpp \
+    vlc_app.cpp \
+    custom/vlc_setting.cpp
+
+FORMS +=
 
 HEADERS += \
-        mainwindow.h
+    custom/basewidget.h \
+    custom/vlc_seek_slider.h \
+    vlc_config.h \
+    vlc_app.h \
+    custom/vlc_setting.h \
+    utils/commonhelper.h
 
-FORMS += \
-        mainwindow.ui
+RESOURCES += \
+    res/res.qrc
